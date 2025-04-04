@@ -15,7 +15,7 @@ def receive_messages(client_socket):
 def start_client():
     server_ip = input("Enter server IP address: ")
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    client_socket.connect((server_ip, 5555))
+    client_socket.connect((server_ip, 7788))
 
     threading.Thread(target=receive_messages, args=(client_socket,), daemon=True).start()
 

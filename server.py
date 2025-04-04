@@ -68,7 +68,6 @@ def handle_client(client_socket, address):
         client_socket.close()
 
 def start_server():
-    """Start the server"""
     try:
         server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         server.bind(("0.0.0.0", 7788))
